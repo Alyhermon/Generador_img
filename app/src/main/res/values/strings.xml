@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Alert</string>
+    <string name="cbpersona">Personas</string>
+        <string name="cbanimales">Animales</string>
+    <string name="cbflores">Flores</string>
+    <string name="cbcarro">Carros</string>
+
+</resources>
