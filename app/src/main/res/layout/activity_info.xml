@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info">
+
+
+    <ImageView
+        android:id="@+id/imgfoto"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/foto"
+        android:layout_marginLeft="70dp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:text="Nombre:"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="#0303b5"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/tvasign"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:text="Asignatura: "
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="#0303b5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="569dp" />
+
+    <TextView
+        android:id="@+id/tvInstituto"
+        android:layout_width="65dp"
+        android:layout_height="23dp"
+        android:text="Instituto:"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        android:textColor="#0303b5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="192dp"/>
+
+    <EditText
+        android:id="@+id/tvasigndef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="192dp"
+        android:text="Moviles" />
+
+    <EditText
+        android:id="@+id/tvInstitutodef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="192dp"
+        android:text="ITLA" />
+
+</FrameLayout>
