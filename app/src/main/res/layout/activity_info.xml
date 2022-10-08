@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imgfoto"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/foto"
+        android:layout_marginLeft="70dp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="300dp"
+        android:text="Nombre:"
+        android:textSize="20dp"
+        android:textColor="#0303b5"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/tvasign"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Asignatura: "
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="20dp"
+        android:textColor="#0303b5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="569dp" />
+
+    <TextView
+        android:id="@+id/tvInstituto"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Instituto:"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="400dp"
+        android:textSize="20dp"
+        android:textColor="#0303b5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="290dp"
+        android:hint="Alina Marina"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtAsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="192dp"
+        android:hint="Moviles" />
+
+    <EditText
+        android:id="@+id/edtInstituto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="390dp"
+        android:hint="ITLA" />
+
+</FrameLayout>
