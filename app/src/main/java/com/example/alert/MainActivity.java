@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     EditText ediN, ediA, ediI;
     String name, asignatura, instituto;
 
+    //////////////////////////////////////////
+
+    EditText eName;
+    //InfoClass Alerta = new InfoClass();
 
 
     @Override
@@ -43,9 +47,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        name= "Alina";
-        asignatura = "Moviles";
-        instituto = "ITLA";
 
         imgF = findViewById(R.id.imgF);
         btninfo = findViewById(R.id.btninfo);
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         deslizar = findViewById(R.id.deslizar);
         this.gestureDetector = new GestureDetector(this, this);
         gestureDetector.setOnDoubleTapListener(this);
+
 
         btninfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                     @Override
                     public void onClick(DialogInterface dialog,int which) {
 
+
                     }
                 });
                 AlertDialog dialog = builder.create();
@@ -90,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
             @Override
             public void onClick(View view) {
                 showAlertDialog();
-
 
             }
         });
@@ -105,10 +107,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                 ediA = customLayout.findViewById( R.id.edtAsign);
                 ediI = customLayout.findViewById(R.id.edtInstituto);
 
-                ediN.setText(name);
-                ediA.setText(asignatura);
-                ediI.setText(instituto);
-
                 ediN.setEnabled(true);
                 ediA.setEnabled(true);
                 ediI.setEnabled(true);
@@ -120,10 +118,12 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                         name = ediN.getText().toString();
                         asignatura = ediA.getText().toString();
                         instituto = ediI.getText().toString();
+                        Toast.makeText(MainActivity.this, ediI.getText().toString(), Toast.LENGTH_SHORT).show();
                     }
                 });
                 AlertDialog dialog = builder.create();
                 dialog.show();
+
             }
         });
 
